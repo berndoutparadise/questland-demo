@@ -1,0 +1,427 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0b211d" />
+    <title>Questland · Real-Life Games</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="site-shell" id="top">
+      <header class="site-header" data-header>
+        <a class="brand" href="#top" data-aria-i18n="brandLabel">
+          <span class="brand-mark" aria-hidden="true">
+            <span class="brand-mark__orb"></span>
+            <span class="brand-mark__needle"></span>
+          </span>
+          <span class="brand-copy">
+            <span class="brand-name">QUESTLAND</span>
+            <span class="brand-descriptor" data-i18n="brandDescriptor"></span>
+          </span>
+        </a>
+
+        <nav class="primary-nav" id="primary-nav" aria-label="Hauptnavigation" data-aria-i18n="navLabel">
+          <a href="#missions" data-i18n="navMissions"></a>
+          <a href="#journey" data-i18n="navJourney"></a>
+          <a href="#for-whom" data-i18n="navForWhom"></a>
+          <a href="#about" data-i18n="navAbout"></a>
+          <a class="nav-cta" href="#request" data-i18n="navCta"></a>
+        </nav>
+
+        <div class="header-actions">
+          <div class="language-switch" role="group" data-aria-i18n="languageLabel">
+            <button class="language-button is-active" type="button" data-lang="de" aria-pressed="true">DE</button>
+            <span aria-hidden="true">/</span>
+            <button class="language-button" type="button" data-lang="en" aria-pressed="false">EN</button>
+          </div>
+          <button class="menu-toggle" type="button" aria-expanded="false" data-aria-i18n="menuOpen">
+            <span class="menu-toggle__line"></span>
+            <span class="menu-toggle__line"></span>
+            <span class="menu-toggle__line"></span>
+            <span class="sr-only" data-i18n="menuOpen"></span>
+          </button>
+        </div>
+      </header>
+
+      <main>
+        <section class="hero" aria-labelledby="hero-title">
+          <div class="hero-visual" aria-hidden="true">
+            <div class="hero-visual__glow hero-visual__glow--sun"></div>
+            <div class="hero-visual__glow hero-visual__glow--blue"></div>
+            <div class="hero-visual__grid"></div>
+            <div class="hero-visual__mountains hero-visual__mountains--back"></div>
+            <div class="hero-visual__mountains hero-visual__mountains--front"></div>
+            <div class="hero-visual__tree-line"></div>
+            <div class="hero-visual__trail"></div>
+            <div class="hero-visual__stars"></div>
+          </div>
+
+          <div class="hero-content page-width">
+            <div class="hero-copy">
+              <p class="eyebrow"><span class="eyebrow__dot"></span><span data-i18n="heroEyebrow"></span></p>
+              <h1 id="hero-title">
+                <span data-i18n="heroTitleLead"></span>
+                <em data-i18n="heroTitleAccent"></em>
+              </h1>
+              <p class="hero-intro" data-i18n="heroIntro"></p>
+              <div class="hero-actions">
+                <a class="button button--primary" href="#compass" data-i18n="heroPrimaryCta"></a>
+                <a class="button button--ghost" href="#request" data-i18n="heroSecondaryCta"></a>
+              </div>
+              <div class="hero-proof" aria-label="" data-aria-i18n="heroProofLabel">
+                <span data-i18n="proofEquipment"></span>
+                <span data-i18n="proofGuidance"></span>
+                <span data-i18n="proofGroups"></span>
+              </div>
+            </div>
+
+            <div class="mission-panel" aria-label="" data-aria-i18n="missionPanelLabel">
+              <div class="mission-panel__topline">
+                <span class="mission-panel__code" data-i18n="panelCode"></span>
+                <span class="mission-panel__status"><span></span><span data-i18n="panelStatus"></span></span>
+              </div>
+              <div class="mission-panel__scene" aria-hidden="true">
+                <div class="scene-sun"></div>
+                <div class="scene-moon"></div>
+                <div class="scene-mountain scene-mountain--one"></div>
+                <div class="scene-mountain scene-mountain--two"></div>
+                <div class="scene-forest"></div>
+                <div class="scene-path"></div>
+                <div class="scene-compass"><span></span></div>
+                <div class="scene-person scene-person--one"></div>
+                <div class="scene-person scene-person--two"></div>
+              </div>
+              <div class="mission-panel__details">
+                <div>
+                  <span class="detail-label" data-i18n="panelObjectiveLabel"></span>
+                  <strong data-i18n="panelObjective"></strong>
+                </div>
+                <div>
+                  <span class="detail-label" data-i18n="panelTerrainLabel"></span>
+                  <strong data-i18n="panelTerrain"></strong>
+                </div>
+              </div>
+              <div class="mission-panel__tags">
+                <span data-i18n="tagTeamplay"></span>
+                <span data-i18n="tagOutdoor"></span>
+                <span data-i18n="tagStory"></span>
+              </div>
+            </div>
+          </div>
+
+          <a class="hero-scroll" href="#compass" data-aria-i18n="scrollLabel">
+            <span class="hero-scroll__line"></span>
+            <span data-i18n="scrollLabel"></span>
+          </a>
+        </section>
+
+        <section class="section compass-section" id="compass" aria-labelledby="compass-title">
+          <div class="page-width">
+            <div class="section-heading section-heading--split">
+              <div>
+                <p class="section-kicker" data-i18n="compassKicker"></p>
+                <h2 id="compass-title" data-i18n="compassTitle"></h2>
+              </div>
+              <p class="section-lede" data-i18n="compassIntro"></p>
+            </div>
+
+            <div class="compass-layout">
+              <div class="compass-questions">
+                <div class="compass-question is-active" data-question="audience">
+                  <div class="question-heading">
+                    <span class="step-number">01</span>
+                    <div>
+                      <p class="question-kicker" data-i18n="questionOneKicker"></p>
+                      <h3 data-i18n="questionOneTitle"></h3>
+                    </div>
+                  </div>
+                  <div class="option-grid option-grid--three">
+                    <button class="option-button" type="button" data-compass-group="audience" data-value="school">
+                      <span class="option-icon option-icon--flag" aria-hidden="true"></span>
+                      <span data-i18n="audienceSchool"></span>
+                    </button>
+                    <button class="option-button" type="button" data-compass-group="audience" data-value="event">
+                      <span class="option-icon option-icon--spark" aria-hidden="true"></span>
+                      <span data-i18n="audienceEvent"></span>
+                    </button>
+                    <button class="option-button" type="button" data-compass-group="audience" data-value="private">
+                      <span class="option-icon option-icon--people" aria-hidden="true"></span>
+                      <span data-i18n="audiencePrivate"></span>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="compass-question" data-question="style">
+                  <div class="question-heading">
+                    <span class="step-number">02</span>
+                    <div>
+                      <p class="question-kicker" data-i18n="questionTwoKicker"></p>
+                      <h3 data-i18n="questionTwoTitle"></h3>
+                    </div>
+                  </div>
+                  <div class="option-grid option-grid--three">
+                    <button class="option-button" type="button" data-compass-group="style" data-value="action">
+                      <span class="option-icon option-icon--bolt" aria-hidden="true"></span>
+                      <span data-i18n="styleAction"></span>
+                    </button>
+                    <button class="option-button" type="button" data-compass-group="style" data-value="story">
+                      <span class="option-icon option-icon--key" aria-hidden="true"></span>
+                      <span data-i18n="styleStory"></span>
+                    </button>
+                    <button class="option-button" type="button" data-compass-group="style" data-value="mix">
+                      <span class="option-icon option-icon--compass" aria-hidden="true"></span>
+                      <span data-i18n="styleMix"></span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <aside class="recommendation-card" id="recommendation" aria-live="polite">
+                <div class="recommendation-card__decor" aria-hidden="true"></div>
+                <div class="recommendation-empty" data-recommendation-empty>
+                  <span class="recommendation-mark" aria-hidden="true">✦</span>
+                  <p class="section-kicker" data-i18n="recommendationKicker"></p>
+                  <h3 data-i18n="recommendationEmptyTitle"></h3>
+                  <p data-i18n="recommendationEmptyText"></p>
+                </div>
+                <div class="recommendation-result" data-recommendation-result hidden>
+                  <p class="section-kicker" data-result="kicker"></p>
+                  <h3 data-result="title"></h3>
+                  <p data-result="description"></p>
+                  <div class="recommendation-meta">
+                    <span data-result="meta"></span>
+                    <span data-result="audience"></span>
+                  </div>
+                  <a class="text-link" href="#missions" data-i18n="recommendationCta"></a>
+                </div>
+              </aside>
+            </div>
+          </div>
+        </section>
+
+        <section class="section missions-section" id="missions" aria-labelledby="missions-title">
+          <div class="page-width">
+            <div class="section-heading">
+              <p class="section-kicker" data-i18n="missionsKicker"></p>
+              <h2 id="missions-title" data-i18n="missionsTitle"></h2>
+              <p class="section-lede" data-i18n="missionsIntro"></p>
+            </div>
+
+            <div class="mission-grid">
+              <article class="mission-card mission-card--action" data-mission-card="action">
+                <div class="media-slot media-slot--action" aria-hidden="true">
+                  <span class="media-slot__label" data-i18n="mediaActionLabel"></span>
+                  <div class="media-slot__energy"></div>
+                  <div class="media-slot__flag"></div>
+                </div>
+                <div class="mission-card__body">
+                  <div class="card-meta"><span data-i18n="cardActionMeta"></span><span class="card-dot"></span><span data-i18n="cardActionMode"></span></div>
+                  <h3 data-i18n="cardActionTitle"></h3>
+                  <p data-i18n="cardActionText"></p>
+                  <button class="text-link mission-select" type="button" data-action="select-mission" data-mission="action" data-i18n="cardSelect"></button>
+                </div>
+              </article>
+
+              <article class="mission-card mission-card--adventure" data-mission-card="story">
+                <div class="media-slot media-slot--adventure" aria-hidden="true">
+                  <span class="media-slot__label" data-i18n="mediaStoryLabel"></span>
+                  <div class="media-slot__moon"></div>
+                  <div class="media-slot__ridge"></div>
+                  <div class="media-slot__trail"></div>
+                </div>
+                <div class="mission-card__body">
+                  <div class="card-meta"><span data-i18n="cardAdventureMeta"></span><span class="card-dot"></span><span data-i18n="cardAdventureMode"></span></div>
+                  <h3 data-i18n="cardAdventureTitle"></h3>
+                  <p data-i18n="cardAdventureText"></p>
+                  <button class="text-link mission-select" type="button" data-action="select-mission" data-mission="story" data-i18n="cardSelect"></button>
+                </div>
+              </article>
+
+              <article class="mission-card mission-card--custom" data-mission-card="mix">
+                <div class="media-slot media-slot--custom" aria-hidden="true">
+                  <span class="media-slot__label" data-i18n="mediaCustomLabel"></span>
+                  <div class="media-slot__rings"></div>
+                  <div class="media-slot__star"></div>
+                  <div class="media-slot__route"></div>
+                </div>
+                <div class="mission-card__body">
+                  <div class="card-meta"><span data-i18n="cardCustomMeta"></span><span class="card-dot"></span><span data-i18n="cardCustomMode"></span></div>
+                  <h3 data-i18n="cardCustomTitle"></h3>
+                  <p data-i18n="cardCustomText"></p>
+                  <button class="text-link mission-select" type="button" data-action="select-mission" data-mission="mix" data-i18n="cardSelect"></button>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section journey-section" id="journey" aria-labelledby="journey-title">
+          <div class="page-width">
+            <div class="section-heading section-heading--split">
+              <div>
+                <p class="section-kicker" data-i18n="journeyKicker"></p>
+                <h2 id="journey-title" data-i18n="journeyTitle"></h2>
+              </div>
+              <p class="section-lede" data-i18n="journeyIntro"></p>
+            </div>
+            <div class="journey-flow">
+              <article class="journey-phase journey-phase--start">
+                <div class="journey-phase__marker"><span>01</span></div>
+                <div>
+                  <p class="journey-phase__label" data-i18n="journeyStartLabel"></p>
+                  <h3 data-i18n="journeyStartTitle"></h3>
+                  <p data-i18n="journeyStartText"></p>
+                </div>
+              </article>
+
+              <div class="journey-branch" aria-label="" data-aria-i18n="journeyPathsLabel">
+                <div class="journey-branch__heading">
+                  <span class="journey-phase__marker journey-phase__marker--branch"><span>02</span></span>
+                  <div>
+                    <p class="journey-phase__label" data-i18n="journeyPathsLabelShort"></p>
+                    <h3 data-i18n="journeyPathsTitle"></h3>
+                  </div>
+                </div>
+                <div class="journey-routes">
+                  <article class="journey-route journey-route--action">
+                    <span class="journey-route__icon journey-route__icon--action" aria-hidden="true"></span>
+                    <h4 data-i18n="journeyActionTitle"></h4>
+                    <p data-i18n="journeyActionText"></p>
+                  </article>
+                  <article class="journey-route journey-route--adventure">
+                    <span class="journey-route__icon journey-route__icon--adventure" aria-hidden="true"></span>
+                    <h4 data-i18n="journeyAdventureTitle"></h4>
+                    <p data-i18n="journeyAdventureText"></p>
+                  </article>
+                  <article class="journey-route journey-route--custom">
+                    <span class="journey-route__icon journey-route__icon--custom" aria-hidden="true"></span>
+                    <h4 data-i18n="journeyCustomTitle"></h4>
+                    <p data-i18n="journeyCustomText"></p>
+                  </article>
+                </div>
+              </div>
+
+              <article class="journey-phase journey-phase--finish">
+                <div class="journey-phase__marker"><span>03</span></div>
+                <div>
+                  <p class="journey-phase__label" data-i18n="journeyFinishLabel"></p>
+                  <h3 data-i18n="journeyFinishTitle"></h3>
+                  <p data-i18n="journeyFinishText"></p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section trust-section" id="for-whom" aria-labelledby="trust-title">
+          <div class="page-width trust-layout">
+            <div class="trust-copy">
+              <p class="section-kicker" data-i18n="trustKicker"></p>
+              <h2 id="trust-title" data-i18n="trustTitle"></h2>
+              <p data-i18n="trustIntro"></p>
+              <a class="text-link" href="#request" data-i18n="trustCta"></a>
+            </div>
+            <div class="trust-grid">
+              <article class="trust-card">
+                <span class="trust-card__index">01</span>
+                <span class="trust-icon trust-icon--equipment" aria-hidden="true"></span>
+                <h3 data-i18n="trustEquipmentTitle"></h3>
+                <p data-i18n="trustEquipmentText"></p>
+              </article>
+              <article class="trust-card">
+                <span class="trust-card__index">02</span>
+                <span class="trust-icon trust-icon--guide" aria-hidden="true"></span>
+                <h3 data-i18n="trustGuideTitle"></h3>
+                <p data-i18n="trustGuideText"></p>
+              </article>
+              <article class="trust-card">
+                <span class="trust-card__index">03</span>
+                <span class="trust-icon trust-icon--location" aria-hidden="true"></span>
+                <h3 data-i18n="trustLocationTitle"></h3>
+                <p data-i18n="trustLocationText"></p>
+              </article>
+              <article class="trust-card">
+                <span class="trust-card__index">04</span>
+                <span class="trust-icon trust-icon--groups" aria-hidden="true"></span>
+                <h3 data-i18n="trustGroupsTitle"></h3>
+                <p data-i18n="trustGroupsText"></p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section log-section" id="about" aria-labelledby="log-title">
+          <div class="page-width">
+            <div class="section-heading section-heading--split">
+              <div>
+                <p class="section-kicker" data-i18n="logKicker"></p>
+                <h2 id="log-title" data-i18n="logTitle"></h2>
+              </div>
+              <p class="section-lede" data-i18n="logIntro"></p>
+            </div>
+            <div class="log-list">
+              <article class="log-entry">
+                <span class="log-entry__number">01</span>
+                <div class="log-entry__marker log-entry__marker--monster" aria-hidden="true"></div>
+                <div class="log-entry__copy">
+                  <p class="log-entry__type" data-i18n="logMonsterType"></p>
+                  <h3 data-i18n="logMonsterTitle"></h3>
+                  <p data-i18n="logMonsterText"></p>
+                </div>
+                <span class="log-entry__badge" data-i18n="logMonsterBadge"></span>
+              </article>
+              <article class="log-entry log-entry--case-file">
+                <span class="log-entry__number">02</span>
+                <div class="log-entry__marker log-entry__marker--operation" aria-hidden="true"></div>
+                <div class="log-entry__copy">
+                  <p class="log-entry__type" data-i18n="logOperationType"></p>
+                  <h3 data-i18n="logOperationTitle"></h3>
+                  <p data-i18n="logOperationText"></p>
+                </div>
+                <span class="log-entry__badge" data-i18n="logOperationBadge"></span>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section request-section" id="request" aria-labelledby="request-title">
+          <div class="page-width">
+            <div class="request-panel">
+              <div class="request-panel__glow" aria-hidden="true"></div>
+              <p class="section-kicker" data-i18n="requestKicker"></p>
+              <h2 id="request-title" data-i18n="requestTitle"></h2>
+              <p data-i18n="requestText"></p>
+              <div class="request-actions">
+                <button class="button button--primary" type="button" data-action="simulate-contact" data-i18n="requestPrimary"></button>
+                <button class="button button--light" type="button" data-action="simulate-contact" data-i18n="requestSecondary"></button>
+              </div>
+              <p class="request-status" id="contact-status" role="status" aria-live="polite"></p>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="page-width footer-inner">
+          <div>
+            <a class="brand brand--footer" href="#top" data-aria-i18n="brandLabel">
+              <span class="brand-mark" aria-hidden="true"><span class="brand-mark__orb"></span><span class="brand-mark__needle"></span></span>
+              <span class="brand-copy"><span class="brand-name">QUESTLAND</span><span class="brand-descriptor" data-i18n="brandDescriptor"></span></span>
+            </a>
+            <p class="footer-note" data-i18n="footerNote"></p>
+          </div>
+          <div class="footer-contact">
+            <span data-i18n="footerRegion"></span>
+            <span data-i18n="footerEmail"></span>
+            <span data-i18n="footerPhone"></span>
+          </div>
+          <p class="footer-legal" data-i18n="footerLegal"></p>
+        </div>
+      </footer>
+    </div>
+
+    <a class="mobile-request" href="#request" data-aria-i18n="mobileCtaLabel" data-i18n="mobileCta"></a>
+    <script src="script.js"></script>
+  </body>
+</html>
