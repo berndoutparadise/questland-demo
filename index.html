@@ -64,7 +64,8 @@
                 <span data-i18n="heroTitleLead"></span>
                 <em data-i18n="heroTitleAccent"></em>
               </h1>
-              <p class="hero-intro" data-i18n="heroIntro"></p>
+              <p class="hero-intro hero-intro--gameplay" data-i18n="heroGameplayIntro"></p>
+              <p class="hero-intro hero-intro--support" data-i18n="heroIntro"></p>
               <div class="hero-actions">
                 <a class="button button--primary" href="#compass" data-i18n="heroPrimaryCta"></a>
                 <a class="button button--ghost" href="#request" data-i18n="heroSecondaryCta"></a>
@@ -120,12 +121,11 @@
 
         <section class="section compass-section" id="compass" aria-labelledby="compass-title">
           <div class="page-width">
-            <div class="section-heading section-heading--split">
+            <div class="section-heading">
               <div>
                 <p class="section-kicker" data-i18n="compassKicker"></p>
                 <h2 id="compass-title" data-i18n="compassTitle"></h2>
               </div>
-              <p class="section-lede" data-i18n="compassIntro"></p>
             </div>
 
             <div class="questgiver-scene">
@@ -411,43 +411,55 @@
               </div>
               <p class="section-lede" data-i18n="journeyIntro"></p>
             </div>
-            <div class="journey-flow" data-journey-flow>
-              <article class="journey-step journey-step--idea">
-                <div class="journey-step__marker">01</div>
-                <p class="journey-phase__label" data-i18n="journeyStepOneLabel"></p>
-                <h3 data-i18n="journeyStepOneTitle"></h3>
-                <p data-i18n="journeyStepOneText"></p>
-              </article>
-              <article class="journey-step journey-step--concept">
-                <div class="journey-step__marker">02</div>
-                <p class="journey-phase__label" data-i18n="journeyStepTwoLabel"></p>
-                <h3 data-i18n="journeyStepTwoTitle"></h3>
-                <p data-i18n="journeyStepTwoText"></p>
-              </article>
-              <article class="journey-step journey-step--location">
-                <div class="journey-step__marker">03</div>
-                <p class="journey-phase__label" data-i18n="journeyStepThreeLabel"></p>
-                <h3 data-i18n="journeyStepThreeTitle"></h3>
-                <p data-i18n="journeyStepThreeText"></p>
-              </article>
-              <article class="journey-step journey-step--date">
-                <div class="journey-step__marker">04</div>
-                <p class="journey-phase__label" data-i18n="journeyStepFourLabel"></p>
-                <h3 data-i18n="journeyStepFourTitle"></h3>
-                <p data-i18n="journeyStepFourText"></p>
-              </article>
-              <article class="journey-step journey-step--equipment">
-                <div class="journey-step__marker">05</div>
-                <p class="journey-phase__label" data-i18n="journeyStepFiveLabel"></p>
-                <h3 data-i18n="journeyStepFiveTitle"></h3>
-                <p data-i18n="journeyStepFiveText"></p>
-              </article>
-              <article class="journey-step journey-step--start">
-                <div class="journey-step__marker">06</div>
-                <p class="journey-phase__label" data-i18n="journeyStepSixLabel"></p>
-                <h3 data-i18n="journeyStepSixTitle"></h3>
-                <p data-i18n="journeyStepSixText"></p>
-              </article>
+            <div class="journey-map" data-journey-flow>
+              <span class="journey-map__path" aria-hidden="true"></span>
+              <ol class="journey-map__list">
+                <li class="journey-map__step journey-map__step--idea">
+                  <span class="journey-map__marker" aria-hidden="true">01</span>
+                  <span class="journey-map__icon" aria-hidden="true"></span>
+                  <div class="journey-map__content">
+                    <p class="journey-phase__label" data-i18n="journeyStepOneLabel"></p>
+                    <h3 data-i18n="journeyStepOneTitle"></h3>
+                    <p data-i18n="journeyStepOneText"></p>
+                  </div>
+                </li>
+                <li class="journey-map__step journey-map__step--location">
+                  <span class="journey-map__marker" aria-hidden="true">02</span>
+                  <span class="journey-map__icon" aria-hidden="true"></span>
+                  <div class="journey-map__content">
+                    <p class="journey-phase__label" data-i18n="journeyStepTwoLabel"></p>
+                    <h3 data-i18n="journeyStepTwoTitle"></h3>
+                    <p data-i18n="journeyStepTwoText"></p>
+                  </div>
+                </li>
+                <li class="journey-map__step journey-map__step--concept">
+                  <span class="journey-map__marker" aria-hidden="true">03</span>
+                  <span class="journey-map__icon" aria-hidden="true"></span>
+                  <div class="journey-map__content">
+                    <p class="journey-phase__label" data-i18n="journeyStepThreeLabel"></p>
+                    <h3 data-i18n="journeyStepThreeTitle"></h3>
+                    <p data-i18n="journeyStepThreeText"></p>
+                  </div>
+                </li>
+                <li class="journey-map__step journey-map__step--date">
+                  <span class="journey-map__marker" aria-hidden="true">04</span>
+                  <span class="journey-map__icon" aria-hidden="true"></span>
+                  <div class="journey-map__content">
+                    <p class="journey-phase__label" data-i18n="journeyStepFourLabel"></p>
+                    <h3 data-i18n="journeyStepFourTitle"></h3>
+                    <p data-i18n="journeyStepFourText"></p>
+                  </div>
+                </li>
+                <li class="journey-map__step journey-map__step--start">
+                  <span class="journey-map__marker" aria-hidden="true">05</span>
+                  <span class="journey-map__icon" aria-hidden="true"></span>
+                  <div class="journey-map__content">
+                    <p class="journey-phase__label" data-i18n="journeyStepFiveLabel"></p>
+                    <h3 data-i18n="journeyStepFiveTitle"></h3>
+                    <p data-i18n="journeyStepFiveText"></p>
+                  </div>
+                </li>
+              </ol>
             </div>
           </div>
         </section>
