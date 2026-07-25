@@ -272,24 +272,7 @@ h1 em { display: block; color: var(--orange); font-style: normal; }
 .trust-icon--groups::before { top: 3px; left: 13px; width: 12px; height: 12px; border: 2px solid currentColor; border-radius: 50%; }
 .trust-icon--groups::after { bottom: 2px; left: 4px; width: 30px; height: 14px; border: 2px solid currentColor; border-bottom: 0; border-radius: 20px 20px 0 0; }
 
-.log-section { background: var(--paper); }
-.log-list { border-top: 1px solid var(--line); }
-.log-entry { display: grid; grid-template-columns: 45px 75px 1fr auto; gap: 15px; align-items: center; min-height: 142px; padding: 17px 0; border-bottom: 1px solid var(--line); transition: padding .2s ease, background .2s ease; }
-.log-entry:hover { padding-inline: 14px; background: rgba(255, 255, 255, .55); }
-.log-entry--case-file { background: rgba(154, 203, 69, .06); }
-.log-entry__number { color: var(--orange); font-family: "Arial Narrow", Impact, sans-serif; font-size: .83rem; font-weight: 900; }
-.log-entry__marker { position: relative; width: 58px; height: 58px; border-radius: 50%; overflow: hidden; }
-.log-entry__marker--operation { background: radial-gradient(circle at 68% 25%, #f3b44e 0 9%, transparent 10%), linear-gradient(145deg, #3f6950, #112d23); }
-.log-entry__marker--operation::after { content: ""; position: absolute; inset: 16px; border: 1px solid rgba(255, 255, 255, .65); transform: rotate(45deg); }
-.log-entry__marker--monster { background: radial-gradient(circle at 62% 31%, #f6cf80 0 12%, transparent 13%), linear-gradient(150deg, #526c4c, #132820); }
-.log-entry__marker--monster::after { content: ""; position: absolute; bottom: 10px; left: 17px; width: 25px; height: 21px; background: #101d19; clip-path: polygon(10% 100%, 13% 45%, 0 28%, 30% 32%, 44% 0, 58% 32%, 100% 28%, 84% 49%, 90% 100%); }
-.log-entry__type { margin-bottom: 4px; color: var(--forest-700); font-size: .61rem; font-weight: 850; letter-spacing: .14em; text-transform: uppercase; }
-.log-entry h3 { margin-bottom: 5px; font-size: 1.65rem; letter-spacing: -.05em; }
-.log-entry__copy p:last-child { max-width: 620px; margin: 0; color: var(--muted); font-size: .84rem; }
-.log-entry__badge { max-width: 120px; padding: 7px 9px; color: var(--forest-700); border: 1px solid rgba(29, 85, 66, .24); border-radius: 999px; font-size: .58rem; font-weight: 850; letter-spacing: .08em; line-height: 1.25; text-align: center; text-transform: uppercase; }
-.log-entry--case-file .log-entry__badge { color: #6a831e; border-color: rgba(154, 203, 69, .64); background: rgba(154, 203, 69, .12); }
-
-.request-section { padding-top: 40px; padding-bottom: 120px; background: var(--paper); }
+.request-section { padding-top: 96px; padding-bottom: 120px; background: var(--paper); }
 .request-panel { position: relative; overflow: hidden; padding: clamp(42px, 7vw, 78px); color: var(--white); background: var(--forest-900); border-radius: var(--radius-lg); text-align: center; isolation: isolate; }
 .request-panel::before { content: ""; position: absolute; z-index: -1; inset: 0; opacity: .22; background-image: linear-gradient(rgba(255, 255, 255, .12) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, .12) 1px, transparent 1px); background-size: 48px 48px; transform: skewY(-7deg) scale(1.3); }
 .request-panel__glow { position: absolute; z-index: -1; top: -150px; right: -100px; width: 360px; height: 360px; background: radial-gradient(circle, rgba(246, 163, 41, .45), transparent 68%); }
@@ -429,12 +412,7 @@ h1 em { display: block; color: var(--orange); font-style: normal; }
   .trust-copy { position: static; margin-bottom: 40px; }
   .trust-grid { grid-template-columns: 1fr; }
   .trust-card { min-height: 0; padding: 22px; }
-  .log-entry { grid-template-columns: 30px 52px 1fr; gap: 9px; min-height: 130px; }
-  .log-entry__marker { width: 48px; height: 48px; }
-  .log-entry h3 { font-size: 1.25rem; }
-  .log-entry__copy p:last-child { font-size: .76rem; line-height: 1.4; }
-  .log-entry__badge { grid-column: 3; justify-self: start; max-width: none; padding: 5px 7px; font-size: .52rem; }
-  .request-section { padding-top: 16px; padding-bottom: 74px; }
+  .request-section { padding-top: 36px; padding-bottom: 74px; }
   .request-panel { padding: 40px 20px; }
   .request-actions { display: grid; }
   .request-actions .button { width: 100%; }
